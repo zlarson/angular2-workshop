@@ -1,0 +1,37 @@
+<span class="pull-right"><h3>4 types</h3></span>
+
+<h2>Bindings Explained</h2>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>String Interpolation</h4></div>
+  <div class="panel-body">
+    used to display a string, or something that can resolve to a string, in the view/template<BR>
+    <strong>{{eventBindingInititalValue}}</strong>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Property Binding</h4></div>
+  <div class="panel-body">
+    allow data to flow into something (component for example) <BR>
+    <input type="text" [value]="eventBindingInititalValue" /><BR>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Event Binding</h4></div>
+  <div class="panel-body">
+    allow data to flow out of something (component for example)<BR>
+    <input type="text" (keyup)="eventBindingOnKeyUp(inputElement.value)" #inputElement /><BR>
+    <strong>{{history}}</strong>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Two-Way Data Binding</h4></div>
+  <div class="panel-body">
+    this was the default in angular 1.<BR>
+    <input type="text" [(ngModel)]="eventBindingInititalValue" /><BR>
+    <strong>{{eventBindingInititalValue}}</strong>
+  </div>
+</div>

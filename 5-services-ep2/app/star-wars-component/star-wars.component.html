@@ -1,0 +1,8 @@
+<div class="panel panel-info">
+    <div class="panel-heading"><h4>Star Wars</h4></div>
+    <div class="panel-body">
+         <input type="text" class="form-control" #characterId><BR>
+        <button class="btn btn-success" (click)="onGetCharacterClick(characterId.value)">Get Info</button><BR><BR>
+        <h2 *ngIf="character">You found: {{character.name}}</h2>
+    </div>
+</div> 
